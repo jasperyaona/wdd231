@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Jasper James Yaona | Course Home Page</title>
+
+    <meta name="description"
+        content="Course home page for Jasper James Yaona, a software development student studying web development and programming.">
+
+    <meta name="author" content="Jasper James Yaona">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
+
 <body>
-    
+
+    <header>
+
+        <div class="header-content">
+
+            <a href="index.html" class="site-name">
+                <img src="images/logo.svg" alt="" width="50" height="50">
+                <span>Course Home Page</span>
+            </a>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="navigation">
+
+            <a href="index.html" class="active">Home</a>
+
+            <a href="chamber/">Chamber</a>
+
+            <a href="final/">Final</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h1>Home</h1>
+
+
+        <!-- Section 1 -->
+        <section class="about-section">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+
+                <p>
+                    My name is Jasper James Yaona. I am a software
+                    development student interested in web development,
+                    programming, and technology.
+                </p>
+
+                <p>
+                    I enjoy learning how websites and applications work
+                    and developing my skills in HTML, CSS, JavaScript,
+                    Python, and other programming technologies.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Section 2 -->
+        <section class="photo-section">
+
+            <h2>Student Photo</h2>
+
+            <div class="photo-container">
+
+                <img src="images/profile.webp" alt="Portrait of Jasper James Yaona" width="300" height="300"
+                    loading="lazy">
+
+            </div>
+
+        </section>
+
+
+        <!-- Section 3 -->
+        <section class="courses-section">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="course-filters">
+                <button id="all-courses" class="filter active">All Courses</button>
+                <button id="wdd-courses" class="filter">WDD Courses</button>
+                <button id="cse-courses" class="filter">CSE Courses</button>
+            </div>
+
+            <div id="course-list"></div>
+
+            <p id="total-credits" class="total-credits"></p>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <!-- Social Media -->
+        <div class="social-links">
+
+            <a href="https://github.com/jasperyaona/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/jasper-james-yaona-9962b8363" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                LinkedIn
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X">
+                X
+            </a>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            • Jasper James Yaona • Philippines
+        </p>
+
+
+        <!-- Last Modified -->
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
+
 </html>

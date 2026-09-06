@@ -1,0 +1,76 @@
+@media screen and (min-width: 700px) {
+
+    /* =========================
+       Navigation
+       ========================= */
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav a {
+        border-top: none;
+        border-right: 1px solid var(--secondary-color);
+        padding: 0.6rem var(--spacing-medium);
+    }
+
+
+    /* =========================
+       Main Layout
+       ========================= */
+
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: var(--spacing-medium);
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+    }
+
+
+    /* =========================
+       About Me
+       ========================= */
+
+    .about-section {
+        grid-column: 1;
+    }
+
+
+    /* =========================
+       Student Photo
+       ========================= */
+
+    .photo-section {
+        grid-column: 2;
+        margin-top: 0;
+    }
+
+    .photo-container {
+        height: calc(100% - 37px);
+    }
+
+
+    /* =========================
+       Courses
+       ========================= */
+
+    .courses-section {
+        grid-column: 1 / -1;
+        margin-top: 0;
+    }
+
+    #course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
