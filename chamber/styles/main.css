@@ -215,12 +215,9 @@ footer p {
     margin: 1rem 0;
 }
 
-.menu button {
-    width: auto;
-    padding: 0.5rem 1rem;
-}
 
 .menu button {
+    width: auto;
     padding: 0.6rem 1.5rem;
     border: 1px solid var(--dark-border);
     border-radius: var(--border-radius);
