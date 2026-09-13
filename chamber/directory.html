@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasper James Yaona | Directory Page</title>
+
+    <meta name="description"
+        content="Chamber Directory Page for Jasper James Yaona, a software development student studying web development and programming.">
+
+    <meta name="author" content="Jasper James Yaona">
+    <meta property="og:title" content="Jasper James Yaona - Directory Page">
+    <meta property="og:description" content="A directory page showcasing our local companies and businesses.">
+    <meta property="og:image" content="https://jasperyaona.github.io/wdd231/images/social-preview.png">
+    <meta property="og:url" content="https://jasperyaona.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="../favicon.ico">
+    <link rel="preload" href="../styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../styles/main-large.css" as="style" media="screen and (min-width: 32rem)"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/main-large.css" media="screen and (min-width: 32rem)">
+    </noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+
+    <script src="../scripts/dates.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="header-content">
+
+            <a href="../index.html" class="site-name">
+                <img src="../images/logo.svg" alt="" width="50" height="50">
+                <span>Jasper James Yaona</span>
+            </a>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="navigation">
+
+            <a href="../index.html" class="active">Home</a>
+
+            <a href="../chamber/directory.html">Chamber</a>
+
+            <a href="final/">Final</a>
+
+        </nav>
+
+    </header>
+    <main class="directory-main">
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <article class="business-list grid">
+
+        </article>
+    </main>
+    <footer>
+        <!-- Social Media -->
+        <div class="social-links">
+
+            <a href="https://github.com/jasperyaona/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/jasper-james-yaona-9962b8363" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                LinkedIn
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X">
+                X
+            </a>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            • Jasper James Yaona • Philippines
+        </p>
+
+
+        <!-- Last Modified -->
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

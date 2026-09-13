@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Summit Tech Solutions",
+    "address": "123 Innovation Drive, Quezon City, Metro Manila 1100",
+    "phone": "+63 2 8123 4567",
+    "website": "summittech.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmo6nnQyF5g60ZL0bSdl4Pkq3WG5am9pRL5C6YDaMdd97bybg7vpeqv0c&s=10",
+    "membershipLevel": 3,
+    "description": "A technology company providing software development and IT solutions for growing businesses.",
+    "industry": "Information Technology"
+  },
+  {
+    "name": "BrightPath Marketing",
+    "address": "45 Business Avenue, Makati City, Metro Manila 1200",
+    "phone": "+63 2 8234 5678",
+    "website": "brightpath.com",
+    "image": "https://img.magnific.com/premium-vector/bright-path-marketing-logo_1322029-142.jpg",
+    "membershipLevel": 2,
+    "description": "A digital marketing agency helping local businesses build their online presence.",
+    "industry": "Marketing"
+  },
+  {
+    "name": "GreenLeaf Café",
+    "address": "78 Garden Street, Taguig City, Metro Manila 1630",
+    "phone": "+63 917 123 4567",
+    "website": "greenleaf.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnnPY7yk_rO8htnzsp7VnywgLkmMgEXBZtXJvGQxxnwV0DzNLlifm3s0bw&s=10",
+    "membershipLevel": 1,
+    "description": "A neighborhood café serving locally sourced coffee, pastries, and light meals.",
+    "industry": "Food and Beverage"
+  },{
+    "name": "PrimeBuild Construction",
+    "address": "210 Builders Road, Pasig City, Metro Manila 1600",
+    "phone": "+63 2 8345 6789",
+    "website": "primebuild.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMmJmC66eH2ZP4JxSqRQDyXC4wHtwM7wN-wFqHBzkwFaguoVK4zvq_uwg&s=10",
+    "membershipLevel": 3,
+    "description": "A construction company specializing in commercial and residential building projects.",
+    "industry": "Construction"
+  },
+  {
+    "name": "MetroLink Logistics",
+    "address": "56 Commerce Street, Parañaque City, Metro Manila 1700",
+    "phone": "+63 2 8456 7890",
+    "website": "metrolink.com",
+    "image": "https://images.seeklogo.com/logo-png/45/1/metrolink-2022-logo-png_seeklogo-455962.png",
+    "membershipLevel": 2,
+    "description": "A logistics provider offering delivery, warehousing, and transportation services.",
+    "industry": "Logistics"
+  },
+  {
+    "name": "Creative Corner Studio",
+    "address": "89 Arts Avenue, Mandaluyong City, Metro Manila 1550",
+    "phone": "+63 918 234 5678",
+    "website": "creativecorner.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsa8vCXsTt7uQEPje17H_Oj3DK32tjdCyWWZnrNb5ywVGHhraAAJ1D4BU&s=10",
+    "membershipLevel": 1,
+    "description": "A creative studio offering graphic design, branding, photography, and content services.",
+    "industry": "Creative Services"
+  },
+  {
+    "name": "Harbor Financial Group",
+    "address": "300 Enterprise Boulevard, Pasay City, Metro Manila 1300",
+    "phone": "+63 2 8567 8901",
+    "website": "harborfinancial.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC22_j7WK-2wze0vUHV9MfUuBxffEm3YTOuyIjwevAR64h2OTOe9bRrQ_6&s=10",
+    "membershipLevel": 3,
+    "description": "A financial services company providing business consulting and financial planning.",
+    "industry": "Financial Services"
+  }
+]

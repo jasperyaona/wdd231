@@ -1,0 +1,13 @@
+{
+    "familyName" : "Yaona",
+    "dateMoved": "2022-02-25",
+    "FamilyNumber":5,
+    "IsVisitedByBishopric" : true,
+    "familyMemberData":{
+        "name":["Ed","Gem","Olea","Shine","Kobi"],
+        "gender":["M","F","F","F","F"],
+        "birthdate":["1964-02-18","1965-09-22","1996-11-09","1997-09-18","2000-06-09"]
+    }
+
+
+}
