@@ -27,7 +27,7 @@ const displayCompanyData = (companies) => {
         logo.setAttribute('alt', `Logo of ${company.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '150');
-        logo.setAttribute('height', '150;');
+        logo.setAttribute('height', '150');
 
         card.classList.add('card');
         card.appendChild(businessName);

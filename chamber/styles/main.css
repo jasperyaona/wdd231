@@ -150,155 +150,15 @@ h1 {
     font-weight: 400;
 }
 
-h2 {
-    margin: 0;
-    padding: var(--spacing-small);
-    background-color: var(--primary-color);
-    color: var(--light-text);
-    text-align: center;
-    font-size: 1rem;
-}
-
-
-/* =========================
-   Sections
-   ========================= */
-
-.about-section,
-.photo-section,
-.courses-section {
-    border: 1px solid var(--border-color);
-    background-color: var(--section-color);
-}
-
-
-/* =========================
-   About Me
-   ========================= */
-
-.about-content {
-    padding: var(--spacing-medium);
-}
-
-.about-content p {
-    margin: 0 0 var(--spacing-medium);
-}
-
-.about-content p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================
-   Student Photo
-   ========================= */
-
-.photo-section {
-    margin-top: var(--spacing-medium);
-}
-
-.photo-container {
-    min-height: 250px;
-    padding: var(--spacing-medium);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.photo-container img {
-    display: block;
-    width: 100%;
-    max-width: 260px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-}
-
-
-/* =========================
-   Courses
-   ========================= */
-
-.courses-section {
-    margin-top: var(--spacing-medium);
-}
-
-.course-filters {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-small);
-    padding: 0.75rem;
-}
-
-.filter {
-    min-height: 42px;
-    padding: var(--spacing-small);
-    border: 2px solid #6b7280;
-    border-radius: 5px;
-    background-color: var(--button-color);
-    color: #111827;
-    font-family: inherit;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.filter:hover,
-.filter:focus {
-    background-color: var(--border-color);
-}
-
-.filter.active {
-    background-color: var(--primary-color);
-    color: var(--light-text);
-    border-color: var(--primary-color);
-}
-
-
-/* =========================
-   Course List
-   ========================= */
-
-#course-list {
-    display: grid;
-    gap: var(--spacing-small);
-    padding: 0 0.75rem;
-}
-
-.course {
-    width: 100%;
-    min-height: 42px;
-    padding: var(--spacing-small);
-    border: 2px solid var(--dark-border);
-    border-radius: 3px;
-    background-color: var(--button-color);
-    color: #111827;
-    font-family: inherit;
-    font-weight: 500;
-}
-
-.course.completed {
-    background-color: var(--completed-background);
-    border-color: var(--completed-border);
-    color: var(--completed-text);
-    font-weight: 700;
-}
-
-
-/* =========================
-   Credits
-   ========================= */
-
-.total-credits {
-    margin: 0;
-    padding: 0.75rem var(--spacing-medium);
-    text-align: center;
-    font-size: 0.9rem;
-}
 
 
 /* =========================
    Footer
    ========================= */
-
+footer img {
+    width: 24px;
+    height: 24px;
+}
 footer {
     margin-top: var(--spacing-medium);
     padding: var(--spacing-medium);
@@ -306,10 +166,7 @@ footer {
     color: #111827;
     text-align: center;
 }
-footer svg {
-    width: 24px;
-    height: 24px;
-}
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -326,7 +183,6 @@ footer svg {
     padding: var(--spacing-small);
     border: 2px solid #111827;
     border-radius: var(--border-radius);
-    background-color: #111827;
     color: var(--light-text);
     text-decoration: none;
     font-size: 0.8rem;
@@ -335,7 +191,7 @@ footer svg {
 
 .social-links a:hover,
 .social-links a:focus {
-    background-color: var(--secondary-color);
+    background-color: var(--border-color);
 }
 
 footer p {
