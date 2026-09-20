@@ -140,6 +140,7 @@ nav a.active {
    ========================= */
 
 main {
+    
     width: 100%;
     padding: var(--spacing-medium);
 }
@@ -318,12 +319,7 @@ footer p {
 
 /* =========================
    Chamber Home Page
-   (new rules only — nothing above this line was changed)
    ========================= */
-
-.home-main {
-    padding: 0;
-}
 
 /* ---------- Hero ---------- */
 .hero {
@@ -555,6 +551,6 @@ footer p {
 }
 
 .loading-text {
-    color: var(--dark-border);
+    color: var(--text-color);
     font-style: italic;
 }

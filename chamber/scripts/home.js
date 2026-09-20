@@ -3,10 +3,9 @@
    ========================= */
 
 const weatherApiKey = "ad74b8648d93a44c1007fb5e730f702f";
-// Members are spread across Metro Manila, so weather is centered there.
-// Swap these for your chamber's actual city/coordinates if that changes.
-const chamberLat = 14.5995;
-const chamberLon = 120.9842;
+// Chamber location: Trece Martires City, Cavite
+const chamberLat = 14.2825;
+const chamberLon = 120.8676;
 
 async function getCurrentWeather() {
     const currentUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${chamberLat}&lon=${chamberLon}&units=metric&appid=${weatherApiKey}`;
@@ -37,13 +36,22 @@ const displayForecast = (data) => {
     const forecastEl = document.querySelector("#weather-forecast");
     const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-    const middayEntries = data.list
-        .filter(entry => entry.dt_txt.includes("12:00:00"))
-        .slice(0, 3);
+    
+    const byDate = {};
+    data.list.forEach(entry => {
+        const [dateKey, timeKey] = entry.dt_txt.split(" ");
+        if (!byDate[dateKey] || timeKey === "12:00:00") {
+            byDate[dateKey] = entry;
+        }
+    });
 
-    middayEntries.forEach(entry => {
+    const dateKeys = Object.keys(byDate).sort();
+   
+    const nextThree = dateKeys.slice(1, 4).map(key => byDate[key]);
+
+    nextThree.forEach(entry => {
         const date = new Date(entry.dt * 1000);
-        const dayLabel = dayNames[date.getDay()];
+        const dayLabel = dayNames[date.getUTCDay()];
         const dayTemp = Math.round(entry.main.temp);
 
         let item = document.createElement("li");
@@ -69,7 +77,6 @@ const displayForecast = (data) => {
 
 const membersUrl = "data/members.json";
 
-// 3 = Gold, 2 = Silver, 1 = Bronze
 const levelNames = { 3: "Gold", 2: "Silver", 1: "Bronze" };
 
 async function getSpotlightData() {
@@ -140,6 +147,19 @@ const displaySpotlights = (companies) => {
    RUN
    ========================= */
 
-getCurrentWeather();
-getForecast();
-getSpotlightData();
+getCurrentWeather().catch(error => {
+    console.error("Current weather failed:", error);
+    document.querySelector("#weather-now").innerHTML =
+        `<span class="desc">Weather unavailable right now.</span>`;
+});
+
+getForecast().catch(error => {
+    console.error("Forecast failed:", error);
+    document.querySelector("#weather-forecast").innerHTML = "";
+});
+
+getSpotlightData().catch(error => {
+    console.error("Spotlights failed:", error);
+    spotlightContainer.innerHTML =
+        `<p class="loading-text">Member spotlights are unavailable right now.</p>`;
+});

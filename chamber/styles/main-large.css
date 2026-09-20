@@ -22,9 +22,11 @@
        Main Layout
        ========================= */
    main {
+        
         width: 100%;
         margin: 0 auto;
-        padding: 1rem;
+        padding: var(--spacing-medium) 6rem var(--spacing-medium) 6rem;
+        
     }
 
     main .business-list.grid {
