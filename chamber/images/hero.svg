@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Illustrated skyline of the Metro Manila business district in muted slate tones</title>
+
+  <rect width="1600" height="900" fill="#f3f4f6"/>
+
+  <!-- soft horizon band -->
+  <rect x="0" y="560" width="1600" height="340" fill="#e5e7eb"/>
+
+  <!-- distant, lighter buildings -->
+  <g fill="#d1d5db">
+    <rect x="40" y="480" width="120" height="180"/>
+    <rect x="190" y="440" width="90" height="220"/>
+    <rect x="310" y="500" width="140" height="160"/>
+    <rect x="1180" y="470" width="110" height="190"/>
+    <rect x="1320" y="510" width="150" height="150"/>
+    <rect x="1490" y="460" width="90" height="200"/>
+  </g>
+
+  <!-- mid-ground buildings -->
+  <g fill="#9ca3af">
+    <rect x="90" y="560" width="150" height="230"/>
+    <rect x="270" y="600" width="120" height="190"/>
+    <rect x="1250" y="580" width="130" height="210"/>
+    <rect x="1400" y="620" width="150" height="170"/>
+  </g>
+
+  <!-- foreground buildings, primary tone -->
+  <g fill="#374151">
+    <rect x="430" y="470" width="160" height="330"/>
+    <rect x="610" y="540" width="120" height="260"/>
+    <rect x="850" y="500" width="150" height="300"/>
+    <rect x="1020" y="560" width="130" height="240"/>
+  </g>
+
+  <!-- tallest, darkest tower -->
+  <g fill="#1f2937">
+    <rect x="720" y="360" width="140" height="440"/>
+    <polygon points="720,360 790,300 860,360"/>
+    <rect x="782" y="270" width="16" height="40"/>
+  </g>
+
+  <!-- window grid, subtle light accents -->
+  <g fill="#f9fafb" opacity="0.55">
+    <!-- tallest tower -->
+    <rect x="742" y="400" width="14" height="20"/>
+    <rect x="772" y="400" width="14" height="20"/>
+    <rect x="802" y="400" width="14" height="20"/>
+    <rect x="742" y="440" width="14" height="20"/>
+    <rect x="772" y="440" width="14" height="20"/>
+    <rect x="802" y="440" width="14" height="20"/>
+    <rect x="742" y="480" width="14" height="20"/>
+    <rect x="772" y="480" width="14" height="20"/>
+    <rect x="802" y="480" width="14" height="20"/>
+    <rect x="742" y="520" width="14" height="20"/>
+    <rect x="772" y="520" width="14" height="20"/>
+    <rect x="802" y="520" width="14" height="20"/>
+
+    <!-- foreground towers -->
+    <rect x="455" y="510" width="14" height="18"/>
+    <rect x="485" y="510" width="14" height="18"/>
+    <rect x="515" y="510" width="14" height="18"/>
+    <rect x="455" y="550" width="14" height="18"/>
+    <rect x="485" y="550" width="14" height="18"/>
+    <rect x="515" y="550" width="14" height="18"/>
+    <rect x="455" y="590" width="14" height="18"/>
+    <rect x="485" y="590" width="14" height="18"/>
+    <rect x="515" y="590" width="14" height="18"/>
+
+    <rect x="875" y="540" width="14" height="18"/>
+    <rect x="905" y="540" width="14" height="18"/>
+    <rect x="935" y="540" width="14" height="18"/>
+    <rect x="875" y="580" width="14" height="18"/>
+    <rect x="905" y="580" width="14" height="18"/>
+    <rect x="935" y="580" width="14" height="18"/>
+  </g>
+
+  <!-- ground line -->
+  <rect x="0" y="800" width="1600" height="100" fill="#1f2937"/>
+</svg>

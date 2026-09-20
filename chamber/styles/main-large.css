@@ -86,4 +86,21 @@
         min-width: 0;
         overflow-wrap: anywhere;
     }
+
+
+    /* =========================
+       Chamber Home Page
+       (new rules only — nothing above this line was changed)
+       ========================= */
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: var(--spacing-large);
+        align-items: start;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

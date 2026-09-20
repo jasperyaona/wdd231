@@ -314,3 +314,247 @@ footer p {
 .business-list.list section img {
     display: none;
 }
+
+
+/* =========================
+   Chamber Home Page
+   (new rules only — nothing above this line was changed)
+   ========================= */
+
+.home-main {
+    padding: 0;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    position: relative;
+    display: grid;
+}
+
+.hero-image {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: clamp(260px, 55vw, 480px);
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay {
+    grid-area: 1 / 1;
+    align-self: end;
+    justify-self: start;
+    max-width: 32rem;
+    margin: 0 0 var(--spacing-medium) var(--spacing-medium);
+    padding: var(--spacing-large);
+    background-color: rgba(31, 41, 55, 0.85);
+    color: var(--light-text);
+    border-radius: var(--border-radius);
+}
+
+.hero-overlay h1 {
+    margin: 0 0 var(--spacing-small);
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.hero-overlay p {
+    margin: 0 0 var(--spacing-medium);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    border-radius: var(--border-radius);
+    background-color: var(--light-text);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--button-color);
+}
+
+/* ---------- Shared rhythm ---------- */
+.home-main > section,
+.home-main > div {
+    padding: var(--spacing-medium);
+}
+
+.home-main h2 {
+    margin: 0 0 var(--spacing-medium);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-bottom: var(--spacing-small);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* ---------- Events ---------- */
+.event-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--spacing-small);
+}
+
+.event-card {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: var(--spacing-medium);
+    align-items: center;
+    padding: var(--spacing-medium);
+    background-color: var(--section-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.event-date {
+    text-align: center;
+    color: var(--primary-color);
+    border-right: 1px solid var(--border-color);
+    padding-right: var(--spacing-small);
+}
+
+.event-date .day {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-date .month {
+    display: block;
+    font-size: 0.75rem;
+}
+
+.event-card h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.event-card p {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+/* ---------- Weather ---------- */
+.weather-card {
+    padding: var(--spacing-medium);
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border-radius: var(--border-radius);
+}
+
+.weather-city {
+    margin: 0 0 var(--spacing-small);
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.weather-now {
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-small);
+    flex-wrap: wrap;
+}
+
+.weather-now .temp {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.weather-now .desc {
+    text-transform: capitalize;
+}
+
+.forecast {
+    list-style: none;
+    margin: var(--spacing-medium) 0 0;
+    padding: var(--spacing-small) 0 0;
+    border-top: 1px solid var(--secondary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-small);
+    text-align: center;
+}
+
+.forecast li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.forecast .fc-day {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.forecast .fc-temp {
+    font-weight: 700;
+}
+
+.weather-note {
+    margin: var(--spacing-small) 0 0;
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+/* ---------- Spotlights ---------- */
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-medium);
+}
+
+.spotlight-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    padding: var(--spacing-medium);
+    background-color: var(--section-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.spotlight-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.spotlight-card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.spotlight-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.spotlight-card a {
+    margin-top: auto;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.badge {
+    align-self: flex-start;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
+
+.loading-text {
+    color: var(--dark-border);
+    font-style: italic;
+}
