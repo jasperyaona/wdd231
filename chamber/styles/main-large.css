@@ -92,8 +92,7 @@
 
     /* =========================
        Chamber Home Page
-       (new rules only — nothing above this line was changed)
-       ========================= */
+      ========================= */
 
     .info-grid {
         display: grid;
@@ -104,5 +103,19 @@
 
     .spotlight-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+    /* =========================
+       Join Page
+       ========================= */
+
+    .join-grid {
+        grid-template-columns: 1.3fr 0.7fr;
+        align-items: start;
+    }
+
+    .submission-summary {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasper James Yaona | Directory Page</title>
+    <title>Jasper James Yaona | Thank You</title>
 
     <meta name="description"
-        content="Chamber Directory Page for Jasper James Yaona, a software development student studying web development and programming.">
+        content="Thank you page confirming a chamber membership application for Jasper James Yaona's chamber project.">
 
     <meta name="author" content="Jasper James Yaona">
-    <meta property="og:title" content="Jasper James Yaona - Directory Page">
-    <meta property="og:description" content="A directory page showcasing our local companies and businesses.">
+    <meta property="og:title" content="Jasper James Yaona - Thank You">
+    <meta property="og:description"
+        content="Confirmation page shown after submitting the chamber membership application.">
     <meta property="og:image" content="https://jasperyaona.github.io/wdd231/images/social-preview.png">
-    <meta property="og:url" content="https://jasperyaona.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://jasperyaona.github.io/wdd231/chamber/thankyou.html">
 
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
@@ -29,7 +30,7 @@
 
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -53,24 +54,52 @@
             <a href="index.html" class="active">Home</a>
 
             <a href="directory.html">Chamber</a>
+
             <a href="join.html">Join</a>
+
             <a href="final/">Final</a>
 
         </nav>
 
     </header>
-    <main class="directory-main">
-        <h1>Directory</h1>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <article class="business-list grid">
+    <main class="thankyou-main">
 
-        </article>
+        <h1>Thank You for Applying!</h1>
+        <p class="join-intro">We've received your application and a member of our team will be in touch soon. Here's
+            what you submitted:</p>
+
+        <dl class="submission-summary" id="submission-summary">
+            <div>
+                <dt>First Name</dt>
+                <dd id="out-firstName"></dd>
+            </div>
+            <div>
+                <dt>Last Name</dt>
+                <dd id="out-lastName"></dd>
+            </div>
+            <div>
+                <dt>Email</dt>
+                <dd id="out-email"></dd>
+            </div>
+            <div>
+                <dt>Mobile Phone</dt>
+                <dd id="out-mobilePhone"></dd>
+            </div>
+            <div>
+                <dt>Business/Organization Name</dt>
+                <dd id="out-businessName"></dd>
+            </div>
+            <div>
+                <dt>Submitted On</dt>
+                <dd id="out-timestamp"></dd>
+            </div>
+        </dl>
+
+        <a href="index.html" class="cta-button">Back to Home</a>
+
     </main>
     <footer>
-        <!-- Social Media -->
+         <!-- Social Media -->
         <div class="social-links">
 
             <a href="https://github.com/jasperyaona/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">

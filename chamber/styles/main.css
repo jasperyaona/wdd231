@@ -554,3 +554,213 @@ footer p {
     color: var(--text-color);
     font-style: italic;
 }
+
+
+/* =========================
+   Join Page
+   ========================= */
+
+.join-main h1 {
+    margin-bottom: var(--spacing-small);
+}
+
+.join-intro {
+    margin: 0 0 var(--spacing-large);
+    color: var(--secondary-color);
+    max-width: 40rem;
+}
+
+.join-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-large);
+}
+
+/* ---------- Form ---------- */
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 0.35rem;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    font: inherit;
+    padding: 0.6rem;
+    border: 1px solid var(--dark-border);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 1px;
+}
+
+.join-form input:invalid:not(:placeholder-shown) {
+    border-color: #b91c1c;
+}
+
+.join-form textarea {
+    resize: vertical;
+}
+
+.join-form input[type="submit"] {
+    align-self: flex-start;
+    padding: 0.75rem 1.75rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.join-form input[type="submit"]:hover,
+.join-form input[type="submit"]:focus {
+    background-color: var(--secondary-color);
+}
+
+/* ---------- Membership cards ---------- */
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-medium);
+}
+
+.membership-card {
+    padding: var(--spacing-medium);
+    background-color: var(--section-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    opacity: 0;
+    transform: translateY(12px);
+    animation: card-in 0.5s ease forwards;
+}
+
+.membership-card:nth-child(1) { animation-delay: 0.05s; }
+.membership-card:nth-child(2) { animation-delay: 0.2s; }
+.membership-card:nth-child(3) { animation-delay: 0.35s; }
+.membership-card:nth-child(4) { animation-delay: 0.5s; }
+
+@keyframes card-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card h2 {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.membership-card p {
+    margin: 0 0 var(--spacing-small);
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.card-link {
+    font: inherit;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--dark-border);
+    border-radius: var(--border-radius);
+    background-color: var(--button-color);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.card-link:hover,
+.card-link:focus {
+    background-color: var(--border-color);
+}
+
+/* ---------- Membership modals ---------- */
+.membership-modal {
+    max-width: 28rem;
+    width: min(90vw, 28rem);
+    padding: var(--spacing-large);
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+}
+
+.membership-modal::backdrop {
+    background-color: rgba(31, 41, 55, 0.6);
+}
+
+.membership-modal h2 {
+    margin: 0 0 var(--spacing-small);
+}
+
+.membership-modal ul {
+    margin: 0 0 var(--spacing-medium);
+    padding-left: 1.2rem;
+}
+
+.membership-modal li {
+    margin-bottom: 0.35rem;
+}
+
+.modal-close {
+    font: inherit;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    background-color: var(--secondary-color);
+}
+
+
+/* =========================
+   Thank You Page
+   ========================= */
+
+.thankyou-main h1 {
+    margin-bottom: var(--spacing-small);
+}
+
+.submission-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-small);
+    margin: 0 0 var(--spacing-large);
+    padding: 0;
+}
+
+.submission-summary > div {
+    padding: var(--spacing-medium);
+    background-color: var(--section-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.submission-summary dt {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.submission-summary dd {
+    margin: 0.25rem 0 0;
+    font-weight: 500;
+}
