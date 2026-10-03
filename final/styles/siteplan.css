@@ -1,0 +1,148 @@
+
+:root {
+    --primary: #0F4C81;
+    --accent: #F4C542;
+    --background: #F8FAFC;
+    --text: #1F2937;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+section {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 6px solid var(--primary);
+}
+
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+h3 {
+    color: var(--primary);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.color-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.color-box {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.color-sample {
+    height: 70px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blue .color-sample {
+    background-color: #0F4C81;
+}
+
+.yellow .color-sample {
+    background-color: #F4C542;
+}
+
+.light .color-sample {
+    background-color: #F8FAFC;
+    border: 1px solid #ccc;
+}
+
+.poppins-example {
+    font-family: "Poppins", sans-serif;
+}
+
+.roboto-example {
+    font-family: "Roboto", sans-serif;
+}
+
+.wireframes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.wireframes img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--primary);
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@media (max-width: 700px) {
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+
+    .color-container,
+    .wireframes {
+        grid-template-columns: 1fr;
+    }
+
+}
+
