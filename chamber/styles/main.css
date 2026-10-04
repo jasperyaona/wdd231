@@ -558,6 +558,7 @@ footer p {
 
 /* =========================
    Join Page
+   (new rules only — nothing above this line was changed)
    ========================= */
 
 .join-main h1 {
@@ -763,4 +764,110 @@ footer p {
 .submission-summary dd {
     margin: 0.25rem 0 0;
     font-weight: 500;
+}
+
+
+/* =========================
+   Discover Page
+   ========================= */
+
+.discover-main h1 {
+    margin-bottom: var(--spacing-small);
+}
+
+.visit-message {
+    margin: 0 0 var(--spacing-large);
+    padding: var(--spacing-small) var(--spacing-medium);
+    background-color: var(--section-color);
+    border-left: 4px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* ---------- Gallery: small & medium screens (320px–1024px) ---------- */
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h";
+    gap: var(--spacing-medium);
+}
+
+.discover-card.item-1 { grid-area: a; }
+.discover-card.item-2 { grid-area: b; }
+.discover-card.item-3 { grid-area: c; }
+.discover-card.item-4 { grid-area: d; }
+.discover-card.item-5 { grid-area: e; }
+.discover-card.item-6 { grid-area: f; }
+.discover-card.item-7 { grid-area: g; }
+.discover-card.item-8 { grid-area: h; }
+
+.discover-card {
+    padding: var(--spacing-medium);
+    background-color: var(--section-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.discover-card h2 {
+    margin: 0 0 var(--spacing-small);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Small/medium: image above text */
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-card figure {
+    margin: 0 0 var(--spacing-small);
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.card-text p {
+    margin: 0 0 var(--spacing-small);
+    font-size: 0.95rem;
+}
+
+.card-text address {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.discover-card button {
+    display: block;
+    width: 100%;
+    margin-top: var(--spacing-medium);
+    font: inherit;
+    padding: 0.65rem 1.1rem;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.discover-card button:hover,
+.discover-card button:focus {
+    background-color: var(--secondary-color);
 }

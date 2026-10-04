@@ -92,7 +92,7 @@
 
     /* =========================
        Chamber Home Page
-      ========================= */
+       ========================= */
 
     .info-grid {
         display: grid;
@@ -105,7 +105,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    
+
     /* =========================
        Join Page
        ========================= */
@@ -117,5 +117,46 @@
 
     .submission-summary {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   Discover Page — Large screens 
+   ========================= */
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e f"
+            "g h";
+    }
+
+    .card-body {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--spacing-medium);
+    }
+
+    .discover-card figure {
+        flex: 0 0 40%;
+        margin: 0;
+    }
+
+    .card-text {
+        flex: 1;
+    }
+
+    /* Hover effect on gallery images — large screens only */
+    .discover-card img {
+        filter: grayscale(55%);
+        transition: filter 0.25s ease, transform 0.25s ease;
+    }
+
+    .discover-card img:hover {
+        filter: grayscale(0%);
+        transform: scale(1.03);
     }
 }

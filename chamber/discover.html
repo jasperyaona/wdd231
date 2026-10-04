@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasper James Yaona | Directory Page</title>
+    <title>Jasper James Yaona | Discover</title>
 
     <meta name="description"
-        content="Chamber Directory Page for Jasper James Yaona, a software development student studying web development and programming.">
+        content="Discover page for Jasper James Yaona's Chamber of Commerce project, highlighting points of interest in the Cavite area.">
 
     <meta name="author" content="Jasper James Yaona">
-    <meta property="og:title" content="Jasper James Yaona - Directory Page">
-    <meta property="og:description" content="A directory page showcasing our local companies and businesses.">
+    <meta property="og:title" content="Jasper James Yaona - Discover">
+    <meta property="og:description"
+        content="Explore historic sites, parks, and attractions in the Cavite area served by the chamber.">
     <meta property="og:image" content="https://jasperyaona.github.io/wdd231/images/social-preview.png">
-    <meta property="og:url" content="https://jasperyaona.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://jasperyaona.github.io/wdd231/chamber/discover.html">
 
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
@@ -29,7 +30,7 @@
 
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -52,39 +53,42 @@
 
             <a href="index.html" class="active">Home</a>
 
-           <a href="directory.html">Directory</a>
+            <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
             <a href="discover.html">Discover</a>
-       
+
 
         </nav>
 
     </header>
-    <main class="directory-main">
-        <h1>Directory</h1>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <article class="business-list grid">
+    <main class="discover-main">
 
-        </article>
+        <h1>Discover Cavite</h1>
+        <p class="join-intro">Eight places that make this part of Cavite worth visiting — history, nature, and a few
+            local oddities.</p>
+
+        <p id="visit-message" class="visit-message"></p>
+
+        <div class="discover-grid" id="discover-gallery">
+            <!-- 8 cards injected by scripts/discover.js from data/discover.mjs -->
+        </div>
+
     </main>
     <footer>
         <!-- Social Media -->
         <div class="social-links">
 
             <a href="https://github.com/jasperyaona/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <img src="images/github.svg" alt="Github Logo">
+                <img src="../chamber/images/github.svg" alt="Github Logo">
             </a>
 
             <a href="https://linkedin.com/in/jasper-james-yaona-9962b8363" target="_blank" rel="noopener noreferrer"
                 aria-label="LinkedIn">
-                <img src="images/linkedin.svg" alt="LinkedIn logo">
+                <img src="../chamber/images/linkedin.svg" alt="LinkedIn logo">
             </a>
 
             <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <img src="images/facebook.svg" alt="Facebook Logo">
+                <img src="../chamber/images/facebook.svg" alt="Facebook Logo">
             </a>
 
         </div>
