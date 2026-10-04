@@ -159,6 +159,8 @@ h1 {
 footer img {
     width: 24px;
     height: 24px;
+    aspect-ratio: 1 / 1;
+    display: inline-block;
 }
 footer {
     margin-top: var(--spacing-medium);
@@ -198,6 +200,7 @@ footer {
 footer p {
     margin: 0.25rem 0;
     font-size: 0.85rem;
+    min-height: 1.2em; 
 }
 
 
@@ -430,13 +433,11 @@ footer p {
     font-size: 1rem;
     font-weight: 500;
 }
-
 .event-card p {
     margin: 0.25rem 0 0;
     font-size: 0.9rem;
     color: var(--secondary-color);
 }
-
 /* ---------- Weather ---------- */
 .weather-card {
     padding: var(--spacing-medium);
@@ -444,29 +445,24 @@ footer p {
     color: var(--light-text);
     border-radius: var(--border-radius);
 }
-
 .weather-city {
     margin: 0 0 var(--spacing-small);
     font-size: 0.85rem;
     opacity: 0.8;
 }
-
 .weather-now {
     display: flex;
     align-items: baseline;
     gap: var(--spacing-small);
     flex-wrap: wrap;
 }
-
 .weather-now .temp {
     font-size: 2.25rem;
     font-weight: 700;
 }
-
 .weather-now .desc {
     text-transform: capitalize;
 }
-
 .forecast {
     list-style: none;
     margin: var(--spacing-medium) 0 0;
@@ -477,35 +473,29 @@ footer p {
     gap: var(--spacing-small);
     text-align: center;
 }
-
 .forecast li {
     display: flex;
     flex-direction: column;
     gap: 0.15rem;
 }
-
 .forecast .fc-day {
     font-size: 0.8rem;
     opacity: 0.8;
 }
-
 .forecast .fc-temp {
     font-weight: 700;
 }
-
 .weather-note {
     margin: var(--spacing-small) 0 0;
     font-size: 0.75rem;
     opacity: 0.7;
 }
-
 /* ---------- Spotlights ---------- */
 .spotlight-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-medium);
 }
-
 .spotlight-card {
     display: flex;
     flex-direction: column;
@@ -515,31 +505,26 @@ footer p {
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
 }
-
 .spotlight-card img {
     width: 64px;
     height: 64px;
     object-fit: contain;
 }
-
 .spotlight-card h3 {
     margin: 0;
     font-size: 1.05rem;
     font-weight: 500;
 }
-
 .spotlight-card p {
     margin: 0;
     font-size: 0.9rem;
     color: var(--secondary-color);
 }
-
 .spotlight-card a {
     margin-top: auto;
     font-weight: 700;
     color: var(--primary-color);
 }
-
 .badge {
     align-self: flex-start;
     padding: 0.15rem 0.6rem;
@@ -549,48 +534,39 @@ footer p {
     background-color: var(--button-color);
     color: var(--text-color);
 }
-
 .loading-text {
     color: var(--text-color);
     font-style: italic;
 }
-
-
 /* =========================
    Join Page
-   (new rules only — nothing above this line was changed)
    ========================= */
 
 .join-main h1 {
     margin-bottom: var(--spacing-small);
 }
-
 .join-intro {
     margin: 0 0 var(--spacing-large);
     color: var(--secondary-color);
     max-width: 40rem;
 }
-
 .join-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-large);
 }
-
 /* ---------- Form ---------- */
 .join-form {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-medium);
 }
-
 .join-form label {
     display: flex;
     flex-direction: column;
     font-weight: 500;
     gap: 0.35rem;
 }
-
 .join-form input,
 .join-form select,
 .join-form textarea {
@@ -601,22 +577,18 @@ footer p {
     background-color: var(--background-color);
     color: var(--text-color);
 }
-
 .join-form input:focus,
 .join-form select:focus,
 .join-form textarea:focus {
     outline: 2px solid var(--accent-color);
     outline-offset: 1px;
 }
-
 .join-form input:invalid:not(:placeholder-shown) {
     border-color: #b91c1c;
 }
-
 .join-form textarea {
     resize: vertical;
 }
-
 .join-form input[type="submit"] {
     align-self: flex-start;
     padding: 0.75rem 1.75rem;
@@ -626,19 +598,16 @@ footer p {
     font-weight: 700;
     cursor: pointer;
 }
-
 .join-form input[type="submit"]:hover,
 .join-form input[type="submit"]:focus {
     background-color: var(--secondary-color);
 }
-
 /* ---------- Membership cards ---------- */
 .membership-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-medium);
 }
-
 .membership-card {
     padding: var(--spacing-medium);
     background-color: var(--section-color);
@@ -648,31 +617,26 @@ footer p {
     transform: translateY(12px);
     animation: card-in 0.5s ease forwards;
 }
-
 .membership-card:nth-child(1) { animation-delay: 0.05s; }
 .membership-card:nth-child(2) { animation-delay: 0.2s; }
 .membership-card:nth-child(3) { animation-delay: 0.35s; }
 .membership-card:nth-child(4) { animation-delay: 0.5s; }
-
 @keyframes card-in {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 .membership-card h2 {
     margin: 0 0 0.4rem;
     font-size: 1.1rem;
     font-weight: 500;
 }
-
 .membership-card p {
     margin: 0 0 var(--spacing-small);
     font-size: 0.9rem;
     color: var(--secondary-color);
 }
-
 .card-link {
     font: inherit;
     padding: 0.4rem 0.9rem;
@@ -682,12 +646,10 @@ footer p {
     cursor: pointer;
     font-weight: 700;
 }
-
 .card-link:hover,
 .card-link:focus {
     background-color: var(--border-color);
 }
-
 /* ---------- Membership modals ---------- */
 .membership-modal {
     max-width: 28rem;
@@ -697,24 +659,19 @@ footer p {
     border-radius: var(--border-radius);
     color: var(--text-color);
 }
-
 .membership-modal::backdrop {
     background-color: rgba(31, 41, 55, 0.6);
 }
-
 .membership-modal h2 {
     margin: 0 0 var(--spacing-small);
 }
-
 .membership-modal ul {
     margin: 0 0 var(--spacing-medium);
     padding-left: 1.2rem;
 }
-
 .membership-modal li {
     margin-bottom: 0.35rem;
 }
-
 .modal-close {
     font: inherit;
     padding: 0.5rem 1.2rem;
@@ -724,21 +681,16 @@ footer p {
     color: var(--light-text);
     cursor: pointer;
 }
-
 .modal-close:hover,
 .modal-close:focus {
     background-color: var(--secondary-color);
 }
-
-
 /* =========================
    Thank You Page
    ========================= */
-
 .thankyou-main h1 {
     margin-bottom: var(--spacing-small);
 }
-
 .submission-summary {
     display: grid;
     grid-template-columns: 1fr;
@@ -746,35 +698,28 @@ footer p {
     margin: 0 0 var(--spacing-large);
     padding: 0;
 }
-
 .submission-summary > div {
     padding: var(--spacing-medium);
     background-color: var(--section-color);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
 }
-
 .submission-summary dt {
     font-size: 0.8rem;
     color: var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
-
 .submission-summary dd {
     margin: 0.25rem 0 0;
     font-weight: 500;
 }
-
-
 /* =========================
    Discover Page
    ========================= */
-
 .discover-main h1 {
     margin-bottom: var(--spacing-small);
 }
-
 .visit-message {
     margin: 0 0 var(--spacing-large);
     padding: var(--spacing-small) var(--spacing-medium);
@@ -784,7 +729,6 @@ footer p {
     font-weight: 500;
     color: var(--text-color);
 }
-
 /* ---------- Gallery: small & medium screens (320px–1024px) ---------- */
 .discover-grid {
     display: grid;
@@ -800,7 +744,6 @@ footer p {
         "h";
     gap: var(--spacing-medium);
 }
-
 .discover-card.item-1 { grid-area: a; }
 .discover-card.item-2 { grid-area: b; }
 .discover-card.item-3 { grid-area: c; }
@@ -809,30 +752,25 @@ footer p {
 .discover-card.item-6 { grid-area: f; }
 .discover-card.item-7 { grid-area: g; }
 .discover-card.item-8 { grid-area: h; }
-
 .discover-card {
     padding: var(--spacing-medium);
     background-color: var(--section-color);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
 }
-
 .discover-card h2 {
     margin: 0 0 var(--spacing-small);
     font-size: 1.2rem;
     font-weight: 500;
 }
-
 /* Small/medium: image above text */
 .card-body {
     display: flex;
     flex-direction: column;
 }
-
 .discover-card figure {
     margin: 0 0 var(--spacing-small);
 }
-
 .discover-card img {
     display: block;
     width: 100%;
@@ -841,18 +779,15 @@ footer p {
     object-fit: cover;
     border-radius: var(--border-radius);
 }
-
 .card-text p {
     margin: 0 0 var(--spacing-small);
     font-size: 0.95rem;
 }
-
 .card-text address {
     font-style: italic;
     font-size: 0.9rem;
     color: var(--secondary-color);
 }
-
 .discover-card button {
     display: block;
     width: 100%;
@@ -866,7 +801,6 @@ footer p {
     font-weight: 700;
     cursor: pointer;
 }
-
 .discover-card button:hover,
 .discover-card button:focus {
     background-color: var(--secondary-color);
