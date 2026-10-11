@@ -1,0 +1,242 @@
+[
+  {
+    "id": "palawan-el-nido",
+    "name": "El Nido",
+    "region": "Mimaropa",
+    "type": "Beach and islands",
+    "shortDescription": "Limestone cliffs, hidden lagoons, and clear turquoise water make El Nido a favorite for island hopping.",
+    "description": "Limestone cliffs, hidden lagoons, and clear turquoise water make El Nido a favorite for island hopping. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "palawan-el-nido.webp",
+    "imageAlt": "El Nido lagoon and limestone cliffs",
+    "activities": [
+      "Island hopping",
+      "Kayaking",
+      "Snorkeling"
+    ],
+    "travelTip": "Book popular boat tours ahead of time and bring reef-safe sun protection."
+  },
+  {
+    "id": "bohol-chocolate-hills",
+    "name": "Chocolate Hills",
+    "region": "Central Visayas",
+    "type": "Nature and hiking",
+    "shortDescription": "See the rolling green hills that turn brown during the dry season.",
+    "description": "See the rolling green hills that turn brown during the dry season. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "bohol-chocolate-hills.webp",
+    "imageAlt": "Chocolate Hills in Bohol",
+    "activities": [
+      "Viewpoint visit",
+      "Countryside tour",
+      "Photography"
+    ],
+    "travelTip": "Visit a viewpoint early in the day to avoid the strongest midday heat."
+  },
+  {
+    "id": "cebu-kawasan-falls",
+    "name": "Kawasan Falls",
+    "region": "Central Visayas",
+    "type": "Nature and hiking",
+    "shortDescription": "A series of vivid blue waterfalls surrounded by tropical greenery in Cebu.",
+    "description": "A series of vivid blue waterfalls surrounded by tropical greenery in Cebu. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "cebu-kawasan-falls.webp",
+    "imageAlt": "Turquoise water at Kawasan Falls",
+    "activities": [
+      "Waterfall visit",
+      "Canyoneering",
+      "Swimming"
+    ],
+    "travelTip": "Check local safety advisories and use an accredited guide for canyoneering."
+  },
+  {
+    "id": "boracay-white-beach",
+    "name": "White Beach, Boracay",
+    "region": "Western Visayas",
+    "type": "Beach and islands",
+    "shortDescription": "A famous stretch of white sand with sunsets, water activities, and beachfront dining.",
+    "description": "A famous stretch of white sand with sunsets, water activities, and beachfront dining. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "boracay-white-beach.webp",
+    "imageAlt": "White sand beach in Boracay",
+    "activities": [
+      "Swimming",
+      "Sunset walk",
+      "Paddleboarding"
+    ],
+    "travelTip": "Follow local environmental rules and use designated boat stations."
+  },
+  {
+    "id": "banaue-rice-terraces",
+    "name": "Banaue Rice Terraces",
+    "region": "Cordillera Administrative Region",
+    "type": "Nature and hiking",
+    "shortDescription": "Explore dramatic mountain terraces shaped by generations of Ifugao farmers.",
+    "description": "Explore dramatic mountain terraces shaped by generations of Ifugao farmers. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "banaue-rice-terraces.webp",
+    "imageAlt": "Banaue rice terraces in the mountains",
+    "activities": [
+      "Scenic viewpoints",
+      "Cultural visit",
+      "Guided hiking"
+    ],
+    "travelTip": "Hire a local guide and ask permission before photographing residents."
+  },
+  {
+    "id": "vigan-heritage",
+    "name": "Vigan Heritage Village",
+    "region": "Ilocos Region",
+    "type": "Culture and history",
+    "shortDescription": "Walk along preserved streets known for Spanish-era architecture and local crafts.",
+    "description": "Walk along preserved streets known for Spanish-era architecture and local crafts. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "vigan-heritage.webp",
+    "imageAlt": "Historic street in Vigan",
+    "activities": [
+      "Heritage walk",
+      "Local food",
+      "Craft shopping"
+    ],
+    "travelTip": "Visit in the late afternoon when the historic streets are cooler."
+  },
+  {
+    "id": "intramuros-manila",
+    "name": "Intramuros",
+    "region": "National Capital Region",
+    "type": "Culture and history",
+    "shortDescription": "Discover historic walls, churches, museums, and landmarks in Manila's old walled city.",
+    "description": "Discover historic walls, churches, museums, and landmarks in Manila's old walled city. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "intramuros-manila.webp",
+    "imageAlt": "Historic stone walls in Intramuros",
+    "activities": [
+      "Walking tour",
+      "Museums",
+      "Heritage sites"
+    ],
+    "travelTip": "Wear comfortable shoes and check opening hours for museums and sites."
+  },
+  {
+    "id": "taal-volcano",
+    "name": "Taal Volcano Viewpoints",
+    "region": "Calabarzon",
+    "type": "Nature and hiking",
+    "shortDescription": "Take in views of the Taal volcanic landscape from approved viewpoints around Batangas.",
+    "description": "Take in views of the Taal volcanic landscape from approved viewpoints around Batangas. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "taal-volcano.webp",
+    "imageAlt": "Taal Lake and volcano landscape",
+    "activities": [
+      "Scenic viewpoints",
+      "Photography",
+      "Local dining"
+    ],
+    "travelTip": "Volcanic activity can change access; check official advisories before visiting."
+  },
+  {
+    "id": "mayon-volcano",
+    "name": "Mayon Volcano",
+    "region": "Bicol Region",
+    "type": "Nature and hiking",
+    "shortDescription": "See the near-symmetrical volcanic cone that rises above the Albay landscape.",
+    "description": "See the near-symmetrical volcanic cone that rises above the Albay landscape. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "mayon-volcano.webp",
+    "imageAlt": "Mayon Volcano rising over green fields",
+    "activities": [
+      "Viewpoints",
+      "Local food",
+      "Cultural attractions"
+    ],
+    "travelTip": "Use designated viewing areas and follow current volcano safety restrictions."
+  },
+  {
+    "id": "siargao-cloud-9",
+    "name": "Cloud 9, Siargao",
+    "region": "Caraga",
+    "type": "Beach and islands",
+    "shortDescription": "A well-known surf area with island scenery, coconut palms, and a relaxed coastal atmosphere.",
+    "description": "A well-known surf area with island scenery, coconut palms, and a relaxed coastal atmosphere. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "siargao-cloud-9.webp",
+    "imageAlt": "Surf waves at Cloud 9 in Siargao",
+    "activities": [
+      "Surfing",
+      "Boardwalk",
+      "Island hopping"
+    ],
+    "travelTip": "Check surf conditions and follow lifeguard or local guidance."
+  },
+  {
+    "id": "sagada-mountain",
+    "name": "Sagada",
+    "region": "Cordillera Administrative Region",
+    "type": "Adventure",
+    "shortDescription": "A mountain town known for cool weather, caves, viewpoints, and cultural heritage.",
+    "description": "A mountain town known for cool weather, caves, viewpoints, and cultural heritage. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "sagada-mountain.webp",
+    "imageAlt": "Mountain landscape around Sagada",
+    "activities": [
+      "Guided hikes",
+      "Cave tours",
+      "Sunrise viewpoints"
+    ],
+    "travelTip": "Reserve accredited guides for caves and hikes and respect local customs."
+  },
+  {
+    "id": "davao-philippine-eagle",
+    "name": "Philippine Eagle Center",
+    "region": "Davao Region",
+    "type": "Nature and wildlife",
+    "shortDescription": "Learn about Philippine eagle conservation and native wildlife in a forest setting.",
+    "description": "Learn about Philippine eagle conservation and native wildlife in a forest setting. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "davao-philippine-eagle.webp",
+    "imageAlt": "Forest habitat at a wildlife conservation center",
+    "activities": [
+      "Wildlife education",
+      "Conservation learning",
+      "Nature walk"
+    ],
+    "travelTip": "Follow visitor rules and keep a respectful distance from animals."
+  },
+  {
+    "id": "camiguin-white-island",
+    "name": "White Island",
+    "region": "Northern Mindanao",
+    "type": "Beach and islands",
+    "shortDescription": "A bright sandbar off Camiguin with wide sea views and a mountain backdrop.",
+    "description": "A bright sandbar off Camiguin with wide sea views and a mountain backdrop. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "camiguin-white-island.webp",
+    "imageAlt": "White sandbar near Camiguin",
+    "activities": [
+      "Swimming",
+      "Photography",
+      "Boat trip"
+    ],
+    "travelTip": "Bring shade and water; the sandbar has little natural shelter."
+  },
+  {
+    "id": "samar-sohoton",
+    "name": "Sohoton Natural Bridge Park",
+    "region": "Eastern Visayas",
+    "type": "Nature and hiking",
+    "shortDescription": "Explore limestone formations, caves, and clear waters in a protected natural area.",
+    "description": "Explore limestone formations, caves, and clear waters in a protected natural area. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "samar-sohoton.webp",
+    "imageAlt": "Limestone karst formations in Sohoton",
+    "activities": [
+      "Boat tour",
+      "Cave exploration",
+      "Nature photography"
+    ],
+    "travelTip": "Arrange local guides and confirm access and weather conditions in advance."
+  },
+  {
+    "id": "zamboanga-pink-beach",
+    "name": "Great Santa Cruz Island",
+    "region": "Zamboanga Peninsula",
+    "type": "Beach and islands",
+    "shortDescription": "Visit a distinctive pink-tinged beach and coastal ecosystem near Zamboanga City.",
+    "description": "Visit a distinctive pink-tinged beach and coastal ecosystem near Zamboanga City. The destination offers a chance to experience the natural and cultural variety of the Philippines.",
+    "image": "zamboanga-pink-beach.webp",
+    "imageAlt": "Pink-tinged sand on Great Santa Cruz Island",
+    "activities": [
+      "Guided island visit",
+      "Beach walk",
+      "Wildlife learning"
+    ],
+    "travelTip": "Follow visitor limits and conservation rules for this protected destination."
+  }
+]

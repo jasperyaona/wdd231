@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a personalized Philippine travel plan based on your interests.">
+  <meta name="author" content="Jasper James Yaona">
+  <meta property="og:title" content="Plan a Trip | Philippine Travel Explorer">
+  <meta property="og:description" content="Tell us what kind of Philippine adventure you want.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/philippines-travel-social.jpg">
+  <title>Plan a Trip | Philippine Travel Explorer</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script type="module" src="scripts/plan.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Philippine Travel Explorer home"><span
+        class="brand-mark">PTE</span><span>Philippine Travel Explorer</span></a>
+    <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a
+        href="destinations.html">Destinations</a><a class="active" href="plan.html">Plan a Trip</a></nav>
+  </header>
+  <main>
+    <section class="page-banner">
+      <p class="eyebrow">Your trip, your way</p>
+      <h1>Plan your Philippine adventure</h1>
+      <p>Share a few preferences to get started. This demo form will display your submitted choices on the next page.
+      </p>
+      <img src="images/trip-planning-banner.webp" alt="Traveler looking out over a Philippine landscape" width="1600"
+        height="500">
+    </section>
+    <section class="section form-section">
+      <form class="trip-form" action="form-action.html" method="get">
+        <label for="traveler-name">Your name<input id="traveler-name" name="name" autocomplete="name" required
+            minlength="2"></label>
+        <label for="traveler-email">Email address<input id="traveler-email" name="email" type="email"
+            autocomplete="email" required></label>
+        <label for="region">Preferred region
+          <select id="region" name="region" required>
+            <option value="">Choose a region</option>
+            <option>National Capital Region</option>
+            <option>Ilocos Region</option>
+            <option>Central Luzon</option>
+            <option>Calabarzon</option>
+            <option>Bicol Region</option>
+            <option>Western Visayas</option>
+            <option>Central Visayas</option>
+            <option>Eastern Visayas</option>
+            <option>Zamboanga Peninsula</option>
+            <option>Northern Mindanao</option>
+            <option>Davao Region</option>
+            <option>Caraga</option>
+            <option>Cordillera Administrative Region</option>
+            <option>Mimaropa</option>
+            <option>Cagayan Valley</option>
+            <option>Soccsksargen</option>
+            <option>Bangsamoro</option>
+          </select>
+        </label>
+        <label for="travel-style">Travel style
+          <select id="travel-style" name="style" required>
+            <option value="">Choose a style</option>
+            <option>Beach and islands</option>
+            <option>Nature and hiking</option>
+            <option>Culture and history</option>
+            <option>Food and city life</option>
+            <option>Family-friendly</option>
+            <option>Adventure</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>What are you interested in?</legend>
+          <label class="checkbox-label"><input type="checkbox" name="interest" value="Beaches"> Beaches</label>
+          <label class="checkbox-label"><input type="checkbox" name="interest" value="Food"> Local food</label>
+          <label class="checkbox-label"><input type="checkbox" name="interest" value="History"> History and
+            culture</label>
+          <label class="checkbox-label"><input type="checkbox" name="interest" value="Nature"> Nature and
+            wildlife</label>
+        </fieldset>
+        <button class="button" type="submit">Create my trip profile</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div><strong>Philippine Travel Explorer</strong>
+      <p>Discover more of the Philippines, one destination at a time.</p>
+    </div>
+    <div class="footer-links"><a href="attributions.html">Image attributions</a>
+    </div>
+    <p class="copyright">© <span id="current-year"></span> Jasper James Yaona · Last modified: <span
+        id="last-modified"></span></p>
+    <p>
+      <a href="https://www.loom.com/share/bc5649d622494bdc82e589d5f5b5151b" target="_blank" rel="noopener noreferrer">
+        Watch Project Demonstration
+      </a>
+    </p>
+  </footer>
+</body>
+
+</html>

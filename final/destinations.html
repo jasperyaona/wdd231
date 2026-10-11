@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Philippine destinations by region and travel style.">
+  <meta name="author" content="Jasper James Yaona">
+  <meta property="og:title" content="Destinations | Philippine Travel Explorer">
+  <meta property="og:description" content="Browse destinations around the Philippines.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/philippines-travel-social.jpg">
+  <title>Destinations | Philippine Travel Explorer</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script type="module" src="scripts/destinations-page.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Philippine Travel Explorer home"><span
+        class="brand-mark">PTE</span><span>Philippine Travel Explorer</span></a>
+    <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a class="active" href="destinations.html">Destinations</a><a href="plan.html">Plan a
+        Trip</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-banner">
+      <p class="eyebrow">Find your kind of adventure</p>
+      <h1>Explore destinations</h1>
+      <p>From island escapes to mountain adventures, discover a place that fits your travel style.</p>
+      <img src="images/destinations-banner.webp" alt="Philippine island scenery" width="1600" height="500">
+    </section>
+    <section class="section">
+      <div class="filter-panel">
+        <label for="search-input">Search destinations<input id="search-input" type="search"
+            placeholder="Try Palawan or beach"></label>
+        <label for="region-filter">Region
+          <select id="region-filter">
+            <option value="all">All regions</option>
+          </select>
+        </label>
+        <label for="type-filter">Travel style
+          <select id="type-filter">
+            <option value="all">All types</option>
+          </select>
+        </label>
+        <button id="favorites-toggle" class="button button-outline" type="button" aria-pressed="false">Show
+          favorites</button>
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite"></p>
+      <div id="destination-list" class="destination-grid" aria-live="polite">
+        <p class="status-message">Loading destinations…</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div><strong>Philippine Travel Explorer</strong>
+      <p>Discover more of the Philippines, one destination at a time.</p>
+    </div>
+    <div class="footer-links"><a href="attributions.html">Image attributions</a>
+    </div>
+    <p class="copyright">© <span id="current-year"></span> Jasper James Yaona · Last modified: <span
+        id="last-modified"></span></p>
+    <p>
+      <a href="https://www.loom.com/share/bc5649d622494bdc82e589d5f5b5151b" target="_blank" rel="noopener noreferrer">
+        Watch Project Demonstration
+      </a>
+    </p>
+  </footer>
+  <dialog id="destination-dialog" class="destination-dialog" aria-labelledby="dialog-title"><button class="dialog-close"
+      id="dialog-close" aria-label="Close destination details">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+</body>
+
+</html>
