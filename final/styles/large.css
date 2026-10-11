@@ -1,4 +1,100 @@
 /* Wider-screen enhancements */
-@media(min-width:650px){.destination-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.filter-panel{grid-template-columns:2fr 1fr 1fr auto;align-items:end}.filter-panel .button{min-height:2.8rem}.trip-form{padding:2rem}.callout{flex-direction:row;align-items:center;justify-content:space-between}.site-footer{grid-template-columns:2fr 1fr;align-items:start}.copyright{grid-column:1/-1}.summary-list{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.site-header{padding:.8rem max(5%,calc((100% - 1150px)/2))}.menu-button{display:none}.site-nav{display:flex;position:static;align-items:center;gap:.35rem;padding:0;background:transparent;box-shadow:none}.brand{font-size:1.05rem}.destination-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{min-height:570px}.hero-content{padding:6rem 0}.destination-card>img{height:220px}.page-banner{min-height:300px}.section{padding:4rem 0}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+@media(min-width:650px) {
+    .destination-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .filter-panel {
+        grid-template-columns: 2fr 1fr 1fr auto;
+        align-items: end
+    }
+
+    .filter-panel .button {
+        min-height: 2.8rem
+    }
+
+    .trip-form {
+        padding: 2rem
+    }
+
+    .callout {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .site-footer {
+        grid-template-columns: 2fr 1fr;
+        align-items: start
+    }
+
+    .copyright {
+        grid-column: 1/-1
+    }
+
+    .summary-list {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media(min-width:900px) {
+    .site-header {
+        padding: .8rem max(5%, calc((100% - 1150px)/2))
+    }
+
+    .menu-button {
+        display: none
+    }
+
+    .site-nav {
+        display: flex;
+        position: static;
+        align-items: center;
+        gap: .35rem;
+        padding: 0;
+        background: transparent;
+        box-shadow: none
+    }
+
+    .brand {
+        font-size: 1.05rem
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    .hero {
+        min-height: 570px
+    }
+
+    .hero-content {
+        padding: 6rem 0
+    }
+
+    .destination-card>img {
+        height: 220px
+    }
+
+    .page-banner {
+        min-height: 300px
+    }
+
+    .section {
+        padding: 4rem 0
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important
+    }
+}
